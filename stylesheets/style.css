@@ -285,11 +285,11 @@ body {
 /* line 184, ../sass/style.scss */
 .container .second {
   margin-top: 90px;
-  text-align: center;
   border-bottom: 1px #ddd solid;
 }
-/* line 188, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 .container .second .sectionTitle {
+  text-align: center;
   color: #5a5f6f;
   position: relative;
 }
@@ -311,11 +311,11 @@ body {
 }
 /* line 205, ../sass/style.scss */
 .container .second .workProcess .left, .container .second .workProcess .right {
-  padding-left: 5%;
   width: 50%;
 }
-/* line 208, ../sass/style.scss */
+/* line 207, ../sass/style.scss */
 .container .second .workProcess .left .icon, .container .second .workProcess .right .icon {
+  margin-left: 25%;
   width: 30px;
   float: left;
   margin-right: 50px;
@@ -350,7 +350,7 @@ body {
 }
 /* line 234, ../sass/style.scss */
 .container .second .workProcess .left .reason, .container .second .workProcess .right .reason {
-  width: 65%;
+  width: 70%;
 }
 /* line 236, ../sass/style.scss */
 .container .second .workProcess .left .reason .item, .container .second .workProcess .right .reason .item {
@@ -463,7 +463,7 @@ body {
 .container .fourth {
   padding: 110px 0;
   overflow: hidden;
-  background: url("../images/sunset-resized.jpg");
+  background: url("../images/08.jpg");
   text-align: center;
 }
 /* line 331, ../sass/style.scss */
@@ -524,33 +524,34 @@ body {
 }
 /* line 361, ../sass/style.scss */
 .container footer {
-  padding: 25px 170px;
+  height: 75px;
 }
 /* line 363, ../sass/style.scss */
 .container footer ul {
+  margin: 30px 170px;
   display: block;
   float: left;
 }
-/* line 366, ../sass/style.scss */
+/* line 367, ../sass/style.scss */
 .container footer ul li {
   display: inline-block;
   margin-right: 25px;
   color: #b1b4b9;
 }
-/* line 372, ../sass/style.scss */
+/* line 373, ../sass/style.scss */
 .container footer ul:last-child {
   float: right;
 }
-/* line 375, ../sass/style.scss */
+/* line 376, ../sass/style.scss */
 .container footer i {
   float: right;
   margin-right: 20px;
 }
-/* line 379, ../sass/style.scss */
+/* line 380, ../sass/style.scss */
 .container footer .fa-twitter {
   color: #3a7aaf;
 }
-/* line 382, ../sass/style.scss */
+/* line 383, ../sass/style.scss */
 .container footer .fa-facebook {
   color: #3d5ea8;
 }

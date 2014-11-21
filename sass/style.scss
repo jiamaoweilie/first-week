@@ -183,9 +183,9 @@ body {
   }
   .second{
     margin-top: 90px;
-    text-align: center;
     border-bottom: 1px $border-color solid;
     .sectionTitle{
+      text-align: center;
       color: $gray-black-color;
       position: relative;
     }
@@ -203,9 +203,9 @@ body {
       display: -webkit-box;
       margin-top: 80px;
       .left, .right{
-        padding-left: 5%;
         width: 50%;
         .icon{
+          margin-left: 25%;
           width: 30px;
           float: left;
           margin-right: 50px;
@@ -230,9 +230,9 @@ body {
           .fa-thumbs-up{
             color: #e66949 ;
           }
-        };
+        }
         .reason {
-          width: 65%;
+          width: 70%;
           .item {
             height: 150px;
             text-align: left;
@@ -326,7 +326,7 @@ body {
   .fourth{
     padding: 110px 0;
     overflow: hidden;
-    background: url("../images/sunset-resized.jpg");
+    background: url("../images/08.jpg");
     text-align: center;
     span{
       font-size: 2em;
@@ -359,8 +359,9 @@ body {
     }
   }
   footer{
-    padding: 25px 170px;
+    height: 75px;
     ul{
+      margin: 30px 170px;
       display: block;
       float: left;
       li{
