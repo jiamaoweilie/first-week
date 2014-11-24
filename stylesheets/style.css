@@ -91,8 +91,8 @@ body .fa-8x {
 }
 /* line 31, ../sass/style.scss */
 .container header {
-  background-size: cover;
   background: url("../images/01.jpg") no-repeat;
+  background-size: cover;
   height: 840px;
   margin: 0px auto 0px auto;
 }
