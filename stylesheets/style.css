@@ -451,32 +451,31 @@ body h3 {
 }
 /* line 320, ../sass/style.scss */
 .container .about-us .image {
-  margin-top: 0px;
-  margin-bottom: 120px;
+  margin: 0px 0 120px 0;
 }
-/* line 323, ../sass/style.scss */
+/* line 322, ../sass/style.scss */
 .container .about-us .image img {
   margin: auto 25px;
 }
-/* line 326, ../sass/style.scss */
+/* line 325, ../sass/style.scss */
 .container .about-us .image img:first-child, .container .about-us .image img:last-child {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-/* line 331, ../sass/style.scss */
+/* line 330, ../sass/style.scss */
 .container .find-an-agent {
   padding: 110px 0;
   overflow: hidden;
   background: url("../images/08.jpg");
   text-align: center;
 }
-/* line 336, ../sass/style.scss */
+/* line 335, ../sass/style.scss */
 .container .find-an-agent span {
   font-size: 2em;
   margin-right: 30px;
   color: white;
 }
-/* line 341, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 .container .find-an-agent input {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -511,7 +510,7 @@ body h3 {
   padding-left: 15px;
   color: #b1b4b9;
 }
-/* line 355, ../sass/style.scss */
+/* line 354, ../sass/style.scss */
 .container .find-an-agent button {
   -moz-border-radius-topright: 3px;
   -webkit-border-top-right-radius: 3px;
@@ -526,41 +525,41 @@ body h3 {
   border: none;
   padding: 0px 35px;
 }
-/* line 366, ../sass/style.scss */
+/* line 365, ../sass/style.scss */
 .container footer {
   height: 75px;
 }
-/* line 368, ../sass/style.scss */
+/* line 367, ../sass/style.scss */
 .container footer ul {
   display: block;
   float: left;
 }
-/* line 371, ../sass/style.scss */
+/* line 370, ../sass/style.scss */
 .container footer ul li {
   font-size: 1.5em;
   display: inline-block;
   margin-right: 25px;
   color: #b1b4b9;
 }
-/* line 378, ../sass/style.scss */
+/* line 377, ../sass/style.scss */
 .container footer ul:first-child {
   margin: 30px 0px 30px 170px;
 }
-/* line 381, ../sass/style.scss */
+/* line 380, ../sass/style.scss */
 .container footer ul:last-child {
   float: right;
   margin: 30px 170px 30px 0px;
 }
-/* line 385, ../sass/style.scss */
+/* line 384, ../sass/style.scss */
 .container footer i {
   float: right;
   margin-right: 20px;
 }
-/* line 389, ../sass/style.scss */
+/* line 388, ../sass/style.scss */
 .container footer .fa-twitter {
   color: #3a7aaf;
 }
-/* line 392, ../sass/style.scss */
+/* line 391, ../sass/style.scss */
 .container footer .fa-facebook {
   color: #3d5ea8;
 }
