@@ -66,60 +66,72 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 12, ../sass/style.scss */
 body {
   font-family: sans-serif;
+  font-size: 62.5%;
+}
+/* line 15, ../sass/style.scss */
+body h1 {
+  font-size: 3em;
+}
+/* line 18, ../sass/style.scss */
+body h2 {
+  font-size: 2em;
+}
+/* line 21, ../sass/style.scss */
+body h3 {
+  font-size: 1.8em;
 }
 
-/* line 16, ../sass/style.scss */
+/* line 26, ../sass/style.scss */
 .container {
   width: 100%;
 }
-/* line 18, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
 .container header {
   background-size: 1000px 840px;
   background: url("../images/01.jpg") no-repeat;
   height: 920px;
   margin: 0px auto 0px auto;
 }
-/* line 25, ../sass/style.scss */
-.container header ul {
+/* line 35, ../sass/style.scss */
+.container header .navigator {
   display: block;
   float: right;
   margin-top: 30px;
   margin-right: 180px;
+  font-size: 1.5em;
 }
-/* line 30, ../sass/style.scss */
-.container header ul li {
+/* line 41, ../sass/style.scss */
+.container header .navigator li {
   display: inline-block;
   padding: 10px 20px 10px 20px;
   color: white;
 }
-/* line 35, ../sass/style.scss */
-.container header ul li.active {
+/* line 46, ../sass/style.scss */
+.container header .navigator li:last-child {
   border: 1px white solid;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 41, ../sass/style.scss */
-.container .titleContainer {
+/* line 52, ../sass/style.scss */
+.container .search {
   display: inline-block;
   margin-top: 300px;
   margin-right: auto;
   width: 100%;
   text-align: center;
 }
-/* line 47, ../sass/style.scss */
-.container .titleContainer h1 {
+/* line 58, ../sass/style.scss */
+.container .search h1 {
   color: white;
-  font-size: 2em;
 }
-/* line 52, ../sass/style.scss */
-.container .titleContainer h3 {
+/* line 61, ../sass/style.scss */
+.container .search h3 {
   margin-top: 10px;
   color: #b1b4b9;
-  font-size: 1.17em;
 }
-/* line 59, ../sass/style.scss */
-.container .titleContainer .search input {
+/* line 67, ../sass/style.scss */
+.container .search form input {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
   border-top-left-radius: 3px;
@@ -129,28 +141,28 @@ body {
   margin-top: 30px;
   background-color: rgba(137, 139, 151, 0.3);
   border: 0px;
-  width: 500px;
+  width: 36%;
   padding: 25px 20px;
-  font-size: 1.17em;
+  font-size: 2em;
 }
 /* line 61, ../../../../.rvm/gems/ruby-1.9.3-p547/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
-.container .titleContainer .search input:-moz-placeholder {
+.container .search form input:-moz-placeholder {
   color: white;
 }
 /* line 64, ../../../../.rvm/gems/ruby-1.9.3-p547/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
-.container .titleContainer .search input::-moz-placeholder {
+.container .search form input::-moz-placeholder {
   color: white;
 }
 /* line 67, ../../../../.rvm/gems/ruby-1.9.3-p547/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
-.container .titleContainer .search input:-ms-input-placeholder {
+.container .search form input:-ms-input-placeholder {
   color: white;
 }
 /* line 56, ../../../../.rvm/gems/ruby-1.9.3-p547/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
-.container .titleContainer .search input::-webkit-input-placeholder {
+.container .search form input::-webkit-input-placeholder {
   color: white;
 }
-/* line 72, ../sass/style.scss */
-.container .titleContainer .search button {
+/* line 80, ../sass/style.scss */
+.container .search form button {
   -moz-border-radius-topright: 3px;
   -webkit-border-top-right-radius: 3px;
   border-top-right-radius: 3px;
@@ -159,72 +171,69 @@ body {
   border-bottom-right-radius: 3px;
   background-color: rgba(89, 217, 155, 0.9);
   padding: 25px 30px;
-  font-size: 1.17em;
+  font-size: 2em;
   border: none;
   color: white;
 }
-/* line 84, ../sass/style.scss */
-.container .totals {
+/* line 92, ../sass/style.scss */
+.container .form {
   background-color: white;
-  border: 1px #ddd solid;
-  border-right: none;
-  width: 1060px;
+  width: 75%;
   height: 150px;
   margin: 300px auto 0px auto;
+  box-sizing: border-box;
 }
-/* line 91, ../sass/style.scss */
-.container .totals div {
+/* line 98, ../sass/style.scss */
+.container .form li {
+  box-sizing: border-box;
   float: left;
-  width: 264px;
-  border-right: 1px #ddd solid;
+  width: 25%;
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: center;
+  border: 1px #ddd solid;
 }
-/* line 98, ../sass/style.scss */
-.container .totals div p:first-child {
-  font-size: 2.0em;
-}
-/* line 101, ../sass/style.scss */
-.container .totals div p:last-child {
+/* line 106, ../sass/style.scss */
+.container .form li p {
+  font-size: 1.5em;
   margin-top: 18px;
   color: #b1b4b9;
 }
-/* line 108, ../sass/style.scss */
-.container .first {
+/* line 114, ../sass/style.scss */
+.container .how-it-works {
   margin-top: 140px;
   text-align: center;
   border-bottom: 1px #ddd solid;
 }
-/* line 112, ../sass/style.scss */
-.container .first .sectionTitle {
+/* line 118, ../sass/style.scss */
+.container .how-it-works .title {
   color: #5a5f6f;
   position: relative;
 }
-/* line 116, ../sass/style.scss */
-.container .first .sectionTitle::after {
+/* line 122, ../sass/style.scss */
+.container .how-it-works .title::after {
   content: "";
   position: absolute;
-  top: 25px;
+  top: 30px;
   left: 50%;
   width: 46px;
   height: 3px;
   background-color: rgba(39, 39, 43, 0.1);
   margin: 0 0 0 -23px;
 }
-/* line 126, ../sass/style.scss */
-.container .first .workProcess {
+/* line 132, ../sass/style.scss */
+.container .how-it-works ul {
   display: -webkit-box;
 }
-/* line 128, ../sass/style.scss */
-.container .first .workProcess .item {
+/* line 134, ../sass/style.scss */
+.container .how-it-works ul li {
   width: 33.33%;
   float: left;
   margin-top: 60px;
   position: relative;
 }
-/* line 133, ../sass/style.scss */
-.container .first .workProcess .item p {
+/* line 139, ../sass/style.scss */
+.container .how-it-works ul li .number {
   border: 2px #ddd solid;
   height: 60px;
   width: 60px;
@@ -235,145 +244,138 @@ body {
   -webkit-border-radius: 100%;
   border-radius: 100%;
   color: #b1b4b9;
+  background-color: white;
 }
-/* line 143, ../sass/style.scss */
-.container .first .workProcess .item p::before {
+/* line 150, ../sass/style.scss */
+.container .how-it-works ul li .number::before {
   content: '';
   position: absolute;
   top: 30px;
-  right: 55%;
-  width: 90%;
+  right: 50%;
+  width: 100%;
   height: 2px;
   background: #ddd;
   z-index: -1;
 }
-/* line 153, ../sass/style.scss */
-.container .first .workProcess .item p.first::before {
+/* line 160, ../sass/style.scss */
+.container .how-it-works ul li .first::before {
   display: none;
 }
-/* line 157, ../sass/style.scss */
-.container .first .workProcess .item .description {
+/* line 163, ../sass/style.scss */
+.container .how-it-works ul li .description {
   margin-top: 30px;
 }
-/* line 159, ../sass/style.scss */
-.container .first .workProcess .item .description i {
+/* line 165, ../sass/style.scss */
+.container .how-it-works ul li .description i {
   margin-bottom: 30px;
 }
-/* line 162, ../sass/style.scss */
-.container .first .workProcess .item .description .fa-github-alt {
+/* line 168, ../sass/style.scss */
+.container .how-it-works ul li .description .fa-github-alt {
   color: #e69949;
 }
-/* line 165, ../sass/style.scss */
-.container .first .workProcess .item .description .fa-eraser {
+/* line 171, ../sass/style.scss */
+.container .how-it-works ul li .description .fa-eraser {
   color: #9c89c9;
 }
-/* line 168, ../sass/style.scss */
-.container .first .workProcess .item .description .fa-users {
+/* line 174, ../sass/style.scss */
+.container .how-it-works ul li .description .fa-users {
   color: #4085bf;
 }
-/* line 171, ../sass/style.scss */
-.container .first .workProcess .item .description .descSummary {
+/* line 177, ../sass/style.scss */
+.container .how-it-works ul li .description h2 {
   color: #5a5f6f;
-  font-size: 1.5em;
 }
-/* line 175, ../sass/style.scss */
-.container .first .workProcess .item .description :last-child {
+/* line 180, ../sass/style.scss */
+.container .how-it-works ul li .description :last-child {
+  font-size: 1.5em;
+  line-height: 20px;
   margin: 10px auto 120px auto;
   color: #b1b4b9;
-  width: 300px;
+  width: 250px;
 }
-/* line 184, ../sass/style.scss */
-.container .second {
+/* line 191, ../sass/style.scss */
+.container .why-choose-us {
   margin-top: 90px;
   border-bottom: 1px #ddd solid;
+  overflow: hidden;
 }
-/* line 187, ../sass/style.scss */
-.container .second .sectionTitle {
+/* line 195, ../sass/style.scss */
+.container .why-choose-us .title {
   text-align: center;
   color: #5a5f6f;
   position: relative;
 }
-/* line 192, ../sass/style.scss */
-.container .second .sectionTitle::after {
+/* line 200, ../sass/style.scss */
+.container .why-choose-us .title::after {
   content: "";
   position: absolute;
-  top: 25px;
+  top: 30px;
   left: 50%;
   width: 46px;
   height: 3px;
   background-color: rgba(39, 39, 43, 0.1);
   margin: 0 0 0 -23px;
 }
-/* line 202, ../sass/style.scss */
-.container .second .workProcess {
-  display: -webkit-box;
-  margin-top: 80px;
-}
-/* line 205, ../sass/style.scss */
-.container .second .workProcess .left, .container .second .workProcess .right {
-  width: 50%;
-}
-/* line 207, ../sass/style.scss */
-.container .second .workProcess .left .icon, .container .second .workProcess .right .icon {
-  margin-left: 25%;
-  width: 30px;
-  float: left;
-  margin-right: 50px;
+/* line 210, ../sass/style.scss */
+.container .why-choose-us ul {
+  margin: 80px 5% 140px 5%;
 }
 /* line 212, ../sass/style.scss */
-.container .second .workProcess .left .icon div, .container .second .workProcess .right .icon div {
-  margin-bottom: 120px;
+.container .why-choose-us ul li {
+  position: relative;
+  width: 50%;
+  float: left;
+  height: 190px;
 }
-/* line 215, ../sass/style.scss */
-.container .second .workProcess .left .icon .fa-check, .container .second .workProcess .right .icon .fa-check {
-  color: #57b381;
-}
-/* line 218, ../sass/style.scss */
-.container .second .workProcess .left .icon .fa-refresh, .container .second .workProcess .right .icon .fa-refresh {
-  color: #e69949;
+/* line 217, ../sass/style.scss */
+.container .why-choose-us ul li i {
+  position: absolute;
+  margin-left: 10%;
 }
 /* line 221, ../sass/style.scss */
-.container .second .workProcess .left .icon .fa-file-text, .container .second .workProcess .right .icon .fa-file-text {
+.container .why-choose-us ul li div {
+  text-align: left;
+  margin: 0  10% 0 20%;
+  color: #5a5f6f;
+}
+/* line 225, ../sass/style.scss */
+.container .why-choose-us ul li div p {
+  margin-top: 20px;
+  line-height: 20px;
+  color: #b1b4b9;
+  font-size: 1.5em;
+}
+/* line 235, ../sass/style.scss */
+.container .why-choose-us .fa-check {
+  color: #57b381;
+}
+/* line 238, ../sass/style.scss */
+.container .why-choose-us .fa-refresh {
+  color: #e69949;
+}
+/* line 241, ../sass/style.scss */
+.container .why-choose-us .fa-file-text {
   color: #ec546b;
 }
-/* line 224, ../sass/style.scss */
-.container .second .workProcess .left .icon .fa-tag, .container .second .workProcess .right .icon .fa-tag {
+/* line 244, ../sass/style.scss */
+.container .why-choose-us .fa-tag {
   color: #15a4e4;
 }
-/* line 227, ../sass/style.scss */
-.container .second .workProcess .left .icon .fa-user, .container .second .workProcess .right .icon .fa-user {
+/* line 247, ../sass/style.scss */
+.container .why-choose-us .fa-user {
   color: #9e62b7;
 }
-/* line 230, ../sass/style.scss */
-.container .second .workProcess .left .icon .fa-thumbs-up, .container .second .workProcess .right .icon .fa-thumbs-up {
+/* line 250, ../sass/style.scss */
+.container .why-choose-us .fa-thumbs-up {
   color: #e66949;
 }
-/* line 234, ../sass/style.scss */
-.container .second .workProcess .left .reason, .container .second .workProcess .right .reason {
-  width: 70%;
-}
-/* line 236, ../sass/style.scss */
-.container .second .workProcess .left .reason .item, .container .second .workProcess .right .reason .item {
-  height: 150px;
-  text-align: left;
-}
-/* line 239, ../sass/style.scss */
-.container .second .workProcess .left .reason .item .title, .container .second .workProcess .right .reason .item .title {
-  font-size: 1.5em;
-  color: #5a5f6f;
-  margin-bottom: 15px;
-}
-/* line 244, ../sass/style.scss */
-.container .second .workProcess .left .reason .item .description, .container .second .workProcess .right .reason .item .description {
-  color: #b1b4b9;
-}
-/* line 252, ../sass/style.scss */
-.container .third {
+/* line 255, ../sass/style.scss */
+.container .about-us {
   text-align: center;
   border-bottom: 1px #ddd solid;
 }
-/* line 255, ../sass/style.scss */
-.container .third img {
+/* line 258, ../sass/style.scss */
+.container .about-us img {
   width: 120px;
   height: 120px;
   -moz-border-radius: 100%;
@@ -382,52 +384,53 @@ body {
   padding: 5px;
   border: 1px #ddd solid;
 }
-/* line 262, ../sass/style.scss */
-.container .third .title {
+/* line 265, ../sass/style.scss */
+.container .about-us .title {
   margin: 100px auto 0 auto;
   width: 410px;
   overflow: hidden;
   position: relative;
 }
-/* line 267, ../sass/style.scss */
-.container .third .title div {
+/* line 270, ../sass/style.scss */
+.container .about-us .title h2 {
   width: 200px;
   float: left;
   height: 60px;
   text-align: center;
   line-height: 60px;
 }
-/* line 274, ../sass/style.scss */
-.container .third .title div:first-child {
+/* line 277, ../sass/style.scss */
+.container .about-us .title h2:first-child {
   background-color: #4e5367;
   border: 1px #4e5367 solid;
   color: white;
 }
-/* line 279, ../sass/style.scss */
-.container .third .title div:last-child {
+/* line 282, ../sass/style.scss */
+.container .about-us .title h2:last-child {
   color: #4e5367;
   border: 1px #4e5367 solid;
 }
-/* line 284, ../sass/style.scss */
-.container .third .description {
+/* line 287, ../sass/style.scss */
+.container .about-us .description {
   width: 100%;
   margin-top: 40px;
 }
-/* line 287, ../sass/style.scss */
-.container .third .description .fa-quote-left {
+/* line 290, ../sass/style.scss */
+.container .about-us .description .fa-quote-left {
   margin-bottom: 30px;
   color: rgba(219, 219, 219, 0.5);
 }
-/* line 291, ../sass/style.scss */
-.container .third .description .message {
+/* line 294, ../sass/style.scss */
+.container .about-us .description p {
   color: #4e5367;
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin-bottom: 50px;
   position: relative;
   padding: 0 20%;
+  line-height: 20px;
 }
-/* line 298, ../sass/style.scss */
-.container .third .description .message::after {
+/* line 302, ../sass/style.scss */
+.container .about-us .description p::after {
   content: "";
   position: absolute;
   top: 50px;
@@ -437,43 +440,44 @@ body {
   background-color: rgba(39, 39, 43, 0.1);
   margin: 0 0 0 -23px;
 }
-/* line 308, ../sass/style.scss */
-.container .third .description .name {
+/* line 312, ../sass/style.scss */
+.container .about-us .description .name {
   color: #4e5367;
 }
-/* line 311, ../sass/style.scss */
-.container .third .description .intro {
+/* line 315, ../sass/style.scss */
+.container .about-us .description .intro {
   margin: 10px auto 40px auto;
   color: #b1b4b9;
 }
-/* line 316, ../sass/style.scss */
-.container .third .image {
+/* line 320, ../sass/style.scss */
+.container .about-us .image {
+  margin-top: 0px;
   margin-bottom: 120px;
 }
-/* line 318, ../sass/style.scss */
-.container .third .image img {
+/* line 323, ../sass/style.scss */
+.container .about-us .image img {
   margin: auto 25px;
 }
-/* line 321, ../sass/style.scss */
-.container .third .image img:first-child, .container .third .image img:last-child {
+/* line 326, ../sass/style.scss */
+.container .about-us .image img:first-child, .container .about-us .image img:last-child {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-/* line 326, ../sass/style.scss */
-.container .fourth {
+/* line 331, ../sass/style.scss */
+.container .find-an-agent {
   padding: 110px 0;
   overflow: hidden;
   background: url("../images/08.jpg");
   text-align: center;
 }
-/* line 331, ../sass/style.scss */
-.container .fourth span {
+/* line 336, ../sass/style.scss */
+.container .find-an-agent span {
   font-size: 2em;
   margin-right: 30px;
   color: white;
 }
-/* line 336, ../sass/style.scss */
-.container .fourth input {
+/* line 341, ../sass/style.scss */
+.container .find-an-agent input {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
   border-top-left-radius: 3px;
@@ -481,34 +485,34 @@ body {
   -webkit-border-bottom-left-radius: 3px;
   border-bottom-left-radius: 3px;
   background-color: white;
-  width: 700px;
+  width: 50%;
   height: 60px;
-  font-size: 1.17em;
+  font-size: 1.5em;
   border: none;
   padding: 0px;
 }
 /* line 61, ../../../../.rvm/gems/ruby-1.9.3-p547/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
-.container .fourth input:-moz-placeholder {
+.container .find-an-agent input:-moz-placeholder {
   padding-left: 15px;
   color: #b1b4b9;
 }
 /* line 64, ../../../../.rvm/gems/ruby-1.9.3-p547/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
-.container .fourth input::-moz-placeholder {
+.container .find-an-agent input::-moz-placeholder {
   padding-left: 15px;
   color: #b1b4b9;
 }
 /* line 67, ../../../../.rvm/gems/ruby-1.9.3-p547/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
-.container .fourth input:-ms-input-placeholder {
+.container .find-an-agent input:-ms-input-placeholder {
   padding-left: 15px;
   color: #b1b4b9;
 }
 /* line 56, ../../../../.rvm/gems/ruby-1.9.3-p547/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
-.container .fourth input::-webkit-input-placeholder {
+.container .find-an-agent input::-webkit-input-placeholder {
   padding-left: 15px;
   color: #b1b4b9;
 }
-/* line 350, ../sass/style.scss */
-.container .fourth button {
+/* line 355, ../sass/style.scss */
+.container .find-an-agent button {
   -moz-border-radius-topright: 3px;
   -webkit-border-top-right-radius: 3px;
   border-top-right-radius: 3px;
@@ -516,42 +520,47 @@ body {
   -webkit-border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
   background-color: rgba(89, 217, 155, 0.9);
-  font-size: 1.17em;
+  font-size: 1.5em;
   color: white;
   height: 60px;
   border: none;
   padding: 0px 35px;
 }
-/* line 361, ../sass/style.scss */
+/* line 366, ../sass/style.scss */
 .container footer {
   height: 75px;
 }
-/* line 363, ../sass/style.scss */
+/* line 368, ../sass/style.scss */
 .container footer ul {
-  margin: 30px 170px;
   display: block;
   float: left;
 }
-/* line 367, ../sass/style.scss */
+/* line 371, ../sass/style.scss */
 .container footer ul li {
+  font-size: 1.5em;
   display: inline-block;
   margin-right: 25px;
   color: #b1b4b9;
 }
-/* line 373, ../sass/style.scss */
+/* line 378, ../sass/style.scss */
+.container footer ul:first-child {
+  margin: 30px 0px 30px 170px;
+}
+/* line 381, ../sass/style.scss */
 .container footer ul:last-child {
   float: right;
+  margin: 30px 170px 30px 0px;
 }
-/* line 376, ../sass/style.scss */
+/* line 385, ../sass/style.scss */
 .container footer i {
   float: right;
   margin-right: 20px;
 }
-/* line 380, ../sass/style.scss */
+/* line 389, ../sass/style.scss */
 .container footer .fa-twitter {
   color: #3a7aaf;
 }
-/* line 383, ../sass/style.scss */
+/* line 392, ../sass/style.scss */
 .container footer .fa-facebook {
   color: #3d5ea8;
 }

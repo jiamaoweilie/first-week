@@ -11,6 +11,16 @@ $dark-color: #4e5367;
 
 body {
   font-family: sans-serif;
+  font-size: 62.5%;
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.8em;
+  }
 }
 
 .container {
@@ -22,116 +32,112 @@ body {
     margin: 0px auto 0px auto;
   }
   header {
-    ul {
+    .navigator {
       display: block;
       float: right;
       margin-top: 30px;
       margin-right: 180px;
+      font-size: 1.5em;
       li {
         display: inline-block;
         padding: 10px 20px 10px 20px;
         color: white;
       }
-      li.active {
+      li:last-child {
         border: 1px white solid;
         @include border-radius($corner-radius);
       }
     }
   }
-  .titleContainer {
+  .search {
     display: inline-block;
     margin-top: 300px;
     margin-right: auto;
     width: 100%;
     text-align: center;
-    h1{
+    h1 {
       color: white;
-      font-size: 2em;
     }
-
-    h3{
+    h3 {
       margin-top: 10px;
       color: $gray-color;
-      font-size: 1.17em;
     }
 
-    .search{
-      input{
-        @include input-placeholder{
+    form {
+      input {
+        @include input-placeholder {
           color: white;
         }
-        @include border-corner-radius(top,left, $corner-radius);
-        @include border-corner-radius(bottom,left, $corner-radius);
+        @include border-corner-radius(top, left, $corner-radius);
+        @include border-corner-radius(bottom, left, $corner-radius);
         margin-top: 30px;
         background-color: rgba(137, 139, 151, 0.3);
         border: 0px;
-        width: 500px;
+        width: 36%;
         padding: 25px 20px;
-        font-size: 1.17em;
+        font-size: 2em;
       }
-      button{
-        @include border-corner-radius(top,right,$corner-radius);
-        @include border-corner-radius(bottom,right,$corner-radius);
+      button {
+        @include border-corner-radius(top, right, $corner-radius);
+        @include border-corner-radius(bottom, right, $corner-radius);
         background-color: rgba(89, 217, 155, 0.9);
         padding: 25px 30px;
-        font-size: 1.17em;
+        font-size: 2em;
         border: none;
         color: white;
       }
     }
   }
 
-  .totals{
+  .form {
     background-color: white;
-    border: 1px $border-color solid;
-    border-right: none;
-    width: 1060px;
+    width: 75%;
     height: 150px;
-    margin:300px auto 0px auto;
-    div{
+    margin: 300px auto 0px auto;
+    box-sizing: border-box;
+    li {
+      box-sizing: border-box;
       float: left;
-      width: 264px;
-      border-right: 1px $border-color solid;
+      width: 25%;
       padding-top: 40px;
       padding-bottom: 40px;
       text-align: center;
-      p:first-child{
-        font-size: 2.0em;
-      }
-      p:last-child{
+      border: 1px $border-color solid;
+      p {
+        font-size: 1.5em;
         margin-top: 18px;
         color: $gray-color;
       }
     }
   }
 
-  .first{
+  .how-it-works {
     margin-top: 140px;
     text-align: center;
     border-bottom: 1px $border-color solid;
-    .sectionTitle{
+    .title {
       color: $gray-black-color;
       position: relative;
     }
-    .sectionTitle::after{
+    .title::after {
       content: "";
       position: absolute;
-      top: 25px;
+      top: 30px;
       left: 50%;
       width: 46px;
       height: 3px;
       background-color: rgba(39, 39, 43, 0.1);
       margin: 0 0 0 -23px;
     }
-    .workProcess{
+    ul {
       display: -webkit-box;
-      .item{
+      li {
         width: 33.33%;
         float: left;
         margin-top: 60px;
         position: relative;
-        p{
-          border:2px $border-color solid;
+        .number {
+          border: 2px $border-color solid;
           height: 60px;
           width: 60px;
           margin: auto;
@@ -139,163 +145,161 @@ body {
           line-height: 60px;
           @include border-radius(100%);
           color: $gray-color;
+          background-color: white;
         }
-        p::before{
+        .number::before {
           content: '';
           position: absolute;
           top: 30px;
-          right: 55%;
-          width: 90%;
+          right: 50%;
+          width: 100%;
           height: 2px;
           background: $border-color;
           z-index: -1;
         }
-        p.first::before{
+        .first::before {
           display: none;
         }
-
-        .description{
+        .description {
           margin-top: 30px;
-          i{
+          i {
             margin-bottom: 30px;
           }
-          .fa-github-alt{
+          .fa-github-alt {
             color: #e69949;
           }
-          .fa-eraser{
+          .fa-eraser {
             color: #9c89c9;
           }
-          .fa-users{
+          .fa-users {
             color: #4085bf;
           }
-          .descSummary{
+          h2 {
             color: $gray-black-color;
-            font-size: 1.5em;
           }
-          :last-child{
+          :last-child {
+            font-size: 1.5em;
+            line-height: 20px;
             margin: 10px auto 120px auto;
             color: $gray-color;
-            width:  300px;
+            width: 250px;
           }
         }
       }
     }
   }
-  .second{
+  .why-choose-us {
     margin-top: 90px;
     border-bottom: 1px $border-color solid;
-    .sectionTitle{
+    overflow: hidden;
+    .title {
       text-align: center;
       color: $gray-black-color;
       position: relative;
     }
-    .sectionTitle::after{
+    .title::after {
       content: "";
       position: absolute;
-      top: 25px;
+      top: 30px;
       left: 50%;
       width: 46px;
       height: 3px;
       background-color: rgba(39, 39, 43, 0.1);
       margin: 0 0 0 -23px;
     }
-    .workProcess{
-      display: -webkit-box;
-      margin-top: 80px;
-      .left, .right{
+    ul {
+      margin: 80px 5% 140px 5%;
+      li{
+        position: relative;
         width: 50%;
-        .icon{
-          margin-left: 25%;
-          width: 30px;
-          float: left;
-          margin-right: 50px;
-          div{
-            margin-bottom: 120px;
-          }
-          .fa-check{
-            color: #57b381;
-          }
-          .fa-refresh{
-            color: #e69949;
-          }
-          .fa-file-text{
-            color: #ec546b;
-          }
-          .fa-tag{
-            color: #15a4e4;
-          }
-          .fa-user{
-            color: #9e62b7;
-          }
-          .fa-thumbs-up{
-            color: #e66949 ;
-          }
+        float: left;
+        height: 190px;
+        i{
+          position: absolute;
+          margin-left: 10%;
         }
-        .reason {
-          width: 70%;
-          .item {
-            height: 150px;
-            text-align: left;
-            .title {
-              font-size: 1.5em;
-              color: $gray-black-color;
-              margin-bottom: 15px;
-            }
-            .description {
-              color: $gray-color;
-            }
+        div{
+          text-align: left;
+          margin:0  10% 0 20%;
+          color: $gray-black-color;
+          p{
+            margin-top: 20px;
+            line-height: 20px;
+            color: $gray-color;
+            font-size: 1.5em;
           }
         }
       }
     }
+
+    .fa-check {
+      color: #57b381;
+    }
+    .fa-refresh {
+      color: #e69949;
+    }
+    .fa-file-text {
+      color: #ec546b;
+    }
+    .fa-tag {
+      color: #15a4e4;
+    }
+    .fa-user {
+      color: #9e62b7;
+    }
+    .fa-thumbs-up {
+      color: #e66949;
+    }
   }
-  .third{
+
+  .about-us {
     text-align: center;
     border-bottom: 1px $border-color solid;
-    img{
+    img {
       width: 120px;
       height: 120px;
       @include border-radius(100%);
       padding: 5px;
       border: 1px $border-color solid;
     }
-    .title{
-      margin: 100px auto 0 auto ;
+    .title {
+      margin: 100px auto 0 auto;
       width: 410px;
       overflow: hidden;
       position: relative;
-      div{
+      h2 {
         width: 200px;
         float: left;
         height: 60px;
         text-align: center;
         line-height: 60px;
       }
-      div:first-child{
+      h2:first-child {
         background-color: $dark-color;
         border: 1px $dark-color solid;
         color: white;
       }
-      div:last-child{
+      h2:last-child {
         color: $dark-color;
         border: 1px $dark-color solid;
       }
     }
-    .description{
+    .description {
       width: 100%;
       margin-top: 40px;
-      .fa-quote-left{
+      .fa-quote-left {
         margin-bottom: 30px;
         color: rgba(219, 219, 219, 0.5);
       }
-      .message{
+      p {
         color: $dark-color;
-        font-size: 1.3em;
+        font-size: 1.5em;
         margin-bottom: 50px;
         position: relative;
         padding: 0 20%;
+        line-height: 20px;
       }
-      .message::after{
+      p::after {
         content: "";
         position: absolute;
         top: 50px;
@@ -305,82 +309,87 @@ body {
         background-color: rgba(39, 39, 43, 0.1);
         margin: 0 0 0 -23px;
       }
-      .name{
+      .name {
         color: $dark-color;
       }
-      .intro{
+      .intro {
         margin: 10px auto 40px auto;
         color: $gray-color;
       }
     }
     .image {
+      margin-top: 0px;
       margin-bottom: 120px;
       img {
-        margin:auto 25px;
+        margin: auto 25px;
       }
-      img:first-child, img:last-child{
+      img:first-child, img:last-child {
         @include filter(grayscale(100%));
       }
     }
   }
-  .fourth{
+  .find-an-agent {
     padding: 110px 0;
     overflow: hidden;
     background: url("../images/08.jpg");
     text-align: center;
-    span{
+    span {
       font-size: 2em;
       margin-right: 30px;
       color: white;
     }
-    input{
-      @include input-placeholder{
+    input {
+      @include input-placeholder {
         padding-left: 15px;
         color: $gray-color;
       }
-      @include border-corner-radius(top,left, $corner-radius);
-      @include border-corner-radius(bottom,left, $corner-radius);
+      @include border-corner-radius(top, left, $corner-radius);
+      @include border-corner-radius(bottom, left, $corner-radius);
       background-color: white;
-      width: 700px;
+      width: 50%;
       height: 60px;
-      font-size: 1.17em;
+      font-size: 1.5em;
       border: none;
       padding: 0px;
     }
-    button{
-      @include border-corner-radius(top,right,$corner-radius);
-      @include border-corner-radius(bottom,right,$corner-radius);
+    button {
+      @include border-corner-radius(top, right, $corner-radius);
+      @include border-corner-radius(bottom, right, $corner-radius);
       background-color: rgba(89, 217, 155, 0.9);
-      font-size: 1.17em;
+      font-size: 1.5em;
       color: white;
       height: 60px;
       border: none;
       padding: 0px 35px;
     }
   }
-  footer{
+  footer {
     height: 75px;
-    ul{
-      margin: 30px 170px;
+    ul {
       display: block;
       float: left;
-      li{
+      li {
+        font-size: 1.5em;
         display: inline-block;
         margin-right: 25px;
         color: $gray-color;
       }
     }
-    ul:last-child{
-      float: right;
+    ul:first-child{
+      margin: 30px 0px 30px 170px;
     }
-    i{
+    ul:last-child {
+      float: right;
+      margin: 30px 170px 30px 0px;
+    }
+    i {
       float: right;
       margin-right: 20px;
     }
-    .fa-twitter{
+    .fa-twitter {
       color: #3a7aaf;
     }
-    .fa-facebook{
+    .fa-facebook {
       color: #3d5ea8;
     }
   }
