@@ -28,6 +28,33 @@ $background-color: #f1f0ed;
   }
 }
 
+@mixin search-input($placeHoldColor, $backgroundColor, $width){
+  @include input-placeholder {
+    padding-left: 15px;
+    color: $placeHoldColor;
+  }
+  @include border-corner-radius(top, left, $corner-radius);
+  @include border-corner-radius(bottom, left, $corner-radius);
+  margin-top: 30px;
+  background-color: $backgroundColor;
+  border: none;
+  padding: 0px;
+  width: $width;
+  height: 60px;
+  font-size: 1.5em;
+}
+
+@mixin search-button($space){
+  @include border-corner-radius(top, right, $corner-radius);
+  @include border-corner-radius(bottom, right, $corner-radius);
+  background-color: rgba(89, 217, 155, 0.9);
+  height: 60px;
+  font-size: 1.5em;
+  border: none;
+  padding: 0 $space;
+  color: white;
+}
+
 body {
   font-family: sans-serif;
   font-size: 62.5%;
@@ -43,6 +70,9 @@ body {
   }
   .fa-7x{
     font-size: 7em;
+  }
+  .fa-s-2x{
+    font-size: 1.5em;
   }
 }
 
@@ -85,29 +115,13 @@ body {
       margin-top: 10px;
       color: $gray-color;
     }
-
     form {
       input {
-        @include input-placeholder {
-          color: white;
-        }
-        @include border-corner-radius(top, left, $corner-radius);
-        @include border-corner-radius(bottom, left, $corner-radius);
-        margin-top: 30px;
-        background-color: rgba(137, 139, 151, 0.3);
-        border: 0px;
-        width: 36%;
-        padding: 25px 20px;
-        font-size: 2em;
+        $background-color: rgba(137, 139, 151, 0.3);
+        @include search-input(white, $background-color, 36%);
       }
       button {
-        @include border-corner-radius(top, right, $corner-radius);
-        @include border-corner-radius(bottom, right, $corner-radius);
-        background-color: rgba(89, 217, 155, 0.9);
-        padding: 25px 30px;
-        font-size: 2em;
-        border: none;
-        color: white;
+        @include search-button(25px);
       }
     }
   }
@@ -329,63 +343,44 @@ body {
     background-size: cover;
     text-align: center;
     span {
-      font-size: 2em;
+      font-size: 2.4em;
       margin-right: 30px;
       color: white;
     }
     input {
-      @include input-placeholder {
-        padding-left: 15px;
-        color: $gray-color;
-      }
-      @include border-corner-radius(top, left, $corner-radius);
-      @include border-corner-radius(bottom, left, $corner-radius);
-      background-color: white;
-      width: 50%;
-      height: 60px;
-      font-size: 1.5em;
-      border: none;
-      padding: 0px;
+      @include search-input($gray-color, white, 50%);
     }
     button {
-      @include border-corner-radius(top, right, $corner-radius);
-      @include border-corner-radius(bottom, right, $corner-radius);
-      background-color: rgba(89, 217, 155, 0.9);
-      font-size: 1.5em;
-      color: white;
-      height: 60px;
-      border: none;
-      padding: 0px 35px;
+      @include search-button(30px);
     }
   }
   footer {
-    height: 75px;
     ul {
-      display: block;
-      float: left;
+      margin: 25px 12%;
       li {
         font-size: 1.5em;
         display: inline-block;
+        position: relative;
+        line-height: 26px;
         margin-right: 25px;
+//        &:last-child{
+//          margin-right: 0px;
+//
+//        }
         color: $gray-color;
+        i {
+          line-height: 22px;
+          &.fa-twitter {
+            color: #3a7aaf;
+          }
+          &.fa-facebook {
+            color: #3d5ea8;
+          }
+        }
+        &:nth-child(n+7){
+          float: right;
+        }
       }
-    }
-    ul:first-child{
-      margin: 30px 0px 30px 170px;
-    }
-    ul:last-child {
-      float: right;
-      margin: 30px 170px 30px 0px;
-    }
-    i {
-      float: right;
-      margin-right: 20px;
-    }
-    .fa-twitter {
-      color: #3a7aaf;
-    }
-    .fa-facebook {
-      color: #3d5ea8;
     }
   }
 }
