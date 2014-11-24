@@ -63,40 +63,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 12, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 body {
   font-family: sans-serif;
   font-size: 62.5%;
+  background-color: #f1f0ed;
 }
-/* line 15, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 body h1 {
   font-size: 3.2em;
 }
-/* line 18, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 body h2 {
   font-size: 2.4em;
 }
-/* line 21, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 body h3 {
   font-size: 1.8em;
 }
-/* line 24, ../sass/style.scss */
-body .fa-8x {
-  font-size: 8em;
+/* line 44, ../sass/style.scss */
+body .fa-7x {
+  font-size: 7em;
 }
 
-/* line 29, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 .container {
   width: 100%;
 }
-/* line 31, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 .container header {
   background: url("../images/01.jpg") no-repeat;
   background-size: cover;
   height: 840px;
   margin: 0px auto 0px auto;
 }
-/* line 38, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 .container header .navigator {
   display: block;
   float: right;
@@ -104,20 +105,20 @@ body .fa-8x {
   margin-right: 180px;
   font-size: 1.5em;
 }
-/* line 44, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 .container header .navigator li {
   display: inline-block;
   padding: 10px 20px 10px 20px;
   color: white;
 }
-/* line 49, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 .container header .navigator li:last-child {
   border: 1px white solid;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 55, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 .container .search {
   display: inline-block;
   margin-top: 240px;
@@ -125,16 +126,16 @@ body .fa-8x {
   width: 100%;
   text-align: center;
 }
-/* line 61, ../sass/style.scss */
+/* line 81, ../sass/style.scss */
 .container .search h1 {
   color: white;
 }
-/* line 64, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 .container .search h3 {
   margin-top: 10px;
   color: #b1b4b9;
 }
-/* line 70, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 .container .search form input {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -165,7 +166,7 @@ body .fa-8x {
 .container .search form input::-webkit-input-placeholder {
   color: white;
 }
-/* line 83, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 .container .search form button {
   -moz-border-radius-topright: 3px;
   -webkit-border-top-right-radius: 3px;
@@ -179,16 +180,16 @@ body .fa-8x {
   border: none;
   color: white;
 }
-/* line 95, ../sass/style.scss */
-.container .form {
-  background-color: white;
+/* line 115, ../sass/style.scss */
+.container .box {
+  background-color: #f1f0ed;
   width: 75%;
   height: 150px;
   margin: 300px auto 0px auto;
   box-sizing: border-box;
 }
-/* line 101, ../sass/style.scss */
-.container .form li {
+/* line 121, ../sass/style.scss */
+.container .box li {
   box-sizing: border-box;
   float: left;
   width: 25%;
@@ -197,24 +198,25 @@ body .fa-8x {
   text-align: center;
   border: 1px #ddd solid;
 }
-/* line 109, ../sass/style.scss */
-.container .form li p {
+/* line 129, ../sass/style.scss */
+.container .box li p {
   font-size: 1.5em;
   margin-top: 18px;
   color: #b1b4b9;
 }
-/* line 117, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 .container .how-it-works {
   margin-top: 140px;
   text-align: center;
   border-bottom: 1px #ddd solid;
 }
-/* line 121, ../sass/style.scss */
+/* line 14, ../sass/style.scss */
 .container .how-it-works .title {
+  text-align: center;
   color: #5a5f6f;
   position: relative;
 }
-/* line 125, ../sass/style.scss */
+/* line 19, ../sass/style.scss */
 .container .how-it-works .title::after {
   content: "";
   position: absolute;
@@ -225,18 +227,18 @@ body .fa-8x {
   background-color: rgba(39, 39, 43, 0.1);
   margin: 0 0 0 -23px;
 }
-/* line 135, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .container .how-it-works ul {
   display: -webkit-box;
 }
-/* line 137, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 .container .how-it-works ul li {
   width: 33.33%;
   float: left;
   margin-top: 60px;
   position: relative;
 }
-/* line 142, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 .container .how-it-works ul li .number {
   border: 2px #ddd solid;
   height: 60px;
@@ -244,13 +246,13 @@ body .fa-8x {
   margin: auto;
   text-align: center;
   line-height: 60px;
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
   color: #b1b4b9;
-  background-color: white;
+  background-color: #f1f0ed;
 }
-/* line 153, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .container .how-it-works ul li .number::before {
   content: '';
   position: absolute;
@@ -261,35 +263,35 @@ body .fa-8x {
   background: #ddd;
   z-index: -1;
 }
-/* line 163, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
 .container .how-it-works ul li .first::before {
   display: none;
 }
-/* line 166, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 .container .how-it-works ul li .description {
   margin-top: 30px;
 }
-/* line 168, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .container .how-it-works ul li .description i {
   margin-bottom: 30px;
 }
-/* line 171, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .container .how-it-works ul li .description .fa-list-alt {
   color: #e69949;
 }
-/* line 174, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 .container .how-it-works ul li .description .fa-pencil {
   color: #9c89c9;
 }
-/* line 177, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 .container .how-it-works ul li .description .fa-users {
   color: #4085bf;
 }
-/* line 180, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 .container .how-it-works ul li .description h2 {
   color: #5a5f6f;
 }
-/* line 183, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 .container .how-it-works ul li .description :last-child {
   font-size: 1.5em;
   line-height: 20px;
@@ -297,19 +299,19 @@ body .fa-8x {
   color: #b1b4b9;
   width: 250px;
 }
-/* line 194, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 .container .why-choose-us {
   margin-top: 90px;
   border-bottom: 1px #ddd solid;
   overflow: hidden;
 }
-/* line 198, ../sass/style.scss */
+/* line 14, ../sass/style.scss */
 .container .why-choose-us .title {
   text-align: center;
   color: #5a5f6f;
   position: relative;
 }
-/* line 203, ../sass/style.scss */
+/* line 19, ../sass/style.scss */
 .container .why-choose-us .title::after {
   content: "";
   position: absolute;
@@ -320,153 +322,170 @@ body .fa-8x {
   background-color: rgba(39, 39, 43, 0.1);
   margin: 0 0 0 -23px;
 }
-/* line 213, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 .container .why-choose-us ul {
   margin: 80px 5% 140px 5%;
 }
-/* line 215, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .container .why-choose-us ul li {
   position: relative;
   width: 50%;
   float: left;
   height: 190px;
 }
-/* line 220, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .container .why-choose-us ul li i {
   position: absolute;
   margin-left: 10%;
 }
-/* line 224, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 .container .why-choose-us ul li div {
   text-align: left;
   margin: 0  10% 0 20%;
   color: #5a5f6f;
 }
-/* line 228, ../sass/style.scss */
+/* line 221, ../sass/style.scss */
 .container .why-choose-us ul li div p {
   margin-top: 20px;
   line-height: 20px;
   color: #b1b4b9;
   font-size: 1.5em;
 }
-/* line 238, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 .container .why-choose-us .fa-check {
   color: #57b381;
 }
-/* line 241, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 .container .why-choose-us .fa-refresh {
   color: #e69949;
 }
-/* line 244, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 .container .why-choose-us .fa-file-text {
   color: #ec546b;
 }
-/* line 247, ../sass/style.scss */
+/* line 240, ../sass/style.scss */
 .container .why-choose-us .fa-tag {
   color: #15a4e4;
 }
-/* line 250, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 .container .why-choose-us .fa-user {
   color: #9e62b7;
 }
-/* line 253, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 .container .why-choose-us .fa-thumbs-up {
   color: #e66949;
 }
-/* line 258, ../sass/style.scss */
+/* line 251, ../sass/style.scss */
 .container .about-us {
   text-align: center;
   border-bottom: 1px #ddd solid;
 }
-/* line 261, ../sass/style.scss */
-.container .about-us img {
-  width: 120px;
-  height: 120px;
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
-  padding: 5px;
-  border: 1px #ddd solid;
-}
-/* line 268, ../sass/style.scss */
+/* line 254, ../sass/style.scss */
 .container .about-us .title {
   margin: 100px auto 0 auto;
   width: 410px;
   overflow: hidden;
   position: relative;
 }
-/* line 273, ../sass/style.scss */
-.container .about-us .title h2 {
+/* line 259, ../sass/style.scss */
+.container .about-us .title h3 {
   width: 200px;
   float: left;
   height: 60px;
   text-align: center;
   line-height: 60px;
 }
-/* line 280, ../sass/style.scss */
-.container .about-us .title h2:first-child {
+/* line 266, ../sass/style.scss */
+.container .about-us .title h3:first-child {
   background-color: #4e5367;
   border: 1px #4e5367 solid;
   color: white;
 }
-/* line 285, ../sass/style.scss */
-.container .about-us .title h2:last-child {
+/* line 271, ../sass/style.scss */
+.container .about-us .title h3:last-child {
   color: #4e5367;
   border: 1px #4e5367 solid;
 }
-/* line 290, ../sass/style.scss */
+/* line 276, ../sass/style.scss */
 .container .about-us .description {
   width: 100%;
   margin-top: 40px;
 }
-/* line 293, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 .container .about-us .description .fa-quote-left {
   margin-bottom: 30px;
   color: rgba(219, 219, 219, 0.5);
 }
-/* line 297, ../sass/style.scss */
+/* line 14, ../sass/style.scss */
+.container .about-us .description p {
+  text-align: center;
+  color: #5a5f6f;
+  position: relative;
+}
+/* line 19, ../sass/style.scss */
+.container .about-us .description p::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  width: 46px;
+  height: 3px;
+  background-color: rgba(39, 39, 43, 0.1);
+  margin: 0 0 0 -23px;
+}
+/* line 284, ../sass/style.scss */
 .container .about-us .description p {
   color: #4e5367;
   font-size: 1.5em;
   margin-bottom: 50px;
-  position: relative;
   padding: 0 20%;
   line-height: 20px;
 }
-/* line 305, ../sass/style.scss */
+/* line 291, ../sass/style.scss */
 .container .about-us .description p::after {
-  content: "";
-  position: absolute;
   top: 45px;
-  left: 50%;
-  width: 42px;
-  height: 2px;
-  background-color: rgba(39, 39, 43, 0.1);
-  margin: 0 0 0 -23px;
 }
-/* line 315, ../sass/style.scss */
+/* line 294, ../sass/style.scss */
 .container .about-us .description .name {
   color: #4e5367;
 }
-/* line 318, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
 .container .about-us .description .intro {
   margin: 10px auto 40px auto;
   color: #b1b4b9;
 }
-/* line 323, ../sass/style.scss */
+/* line 302, ../sass/style.scss */
 .container .about-us .image {
-  margin: 0px 0 120px 0;
+  margin: 0px auto 120px auto;
+  overflow: hidden;
+  text-align: center;
+  width: 552px;
 }
-/* line 325, ../sass/style.scss */
-.container .about-us .image img {
+/* line 307, ../sass/style.scss */
+.container .about-us .image div {
+  float: left;
+  width: 120px;
   margin: auto 25px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px #ddd solid;
+  padding: 6px;
 }
-/* line 328, ../sass/style.scss */
-.container .about-us .image img:first-child, .container .about-us .image img:last-child {
+/* line 314, ../sass/style.scss */
+.container .about-us .image div img {
+  width: 120px;
+  height: 120px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 319, ../sass/style.scss */
+.container .about-us .image div:first-child, .container .about-us .image div:last-child {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-/* line 333, ../sass/style.scss */
+/* line 325, ../sass/style.scss */
 .container .find-an-agent {
   padding: 110px 0;
   overflow: hidden;
@@ -474,13 +493,13 @@ body .fa-8x {
   background-size: cover;
   text-align: center;
 }
-/* line 339, ../sass/style.scss */
+/* line 331, ../sass/style.scss */
 .container .find-an-agent span {
   font-size: 2em;
   margin-right: 30px;
   color: white;
 }
-/* line 344, ../sass/style.scss */
+/* line 336, ../sass/style.scss */
 .container .find-an-agent input {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -515,7 +534,7 @@ body .fa-8x {
   padding-left: 15px;
   color: #b1b4b9;
 }
-/* line 358, ../sass/style.scss */
+/* line 350, ../sass/style.scss */
 .container .find-an-agent button {
   -moz-border-radius-topright: 3px;
   -webkit-border-top-right-radius: 3px;
@@ -530,41 +549,41 @@ body .fa-8x {
   border: none;
   padding: 0px 35px;
 }
-/* line 369, ../sass/style.scss */
+/* line 361, ../sass/style.scss */
 .container footer {
   height: 75px;
 }
-/* line 371, ../sass/style.scss */
+/* line 363, ../sass/style.scss */
 .container footer ul {
   display: block;
   float: left;
 }
-/* line 374, ../sass/style.scss */
+/* line 366, ../sass/style.scss */
 .container footer ul li {
   font-size: 1.5em;
   display: inline-block;
   margin-right: 25px;
   color: #b1b4b9;
 }
-/* line 381, ../sass/style.scss */
+/* line 373, ../sass/style.scss */
 .container footer ul:first-child {
   margin: 30px 0px 30px 170px;
 }
-/* line 384, ../sass/style.scss */
+/* line 376, ../sass/style.scss */
 .container footer ul:last-child {
   float: right;
   margin: 30px 170px 30px 0px;
 }
-/* line 388, ../sass/style.scss */
+/* line 380, ../sass/style.scss */
 .container footer i {
   float: right;
   margin-right: 20px;
 }
-/* line 392, ../sass/style.scss */
+/* line 384, ../sass/style.scss */
 .container footer .fa-twitter {
   color: #3a7aaf;
 }
-/* line 395, ../sass/style.scss */
+/* line 387, ../sass/style.scss */
 .container footer .fa-facebook {
   color: #3d5ea8;
 }

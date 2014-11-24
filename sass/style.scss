@@ -8,10 +8,30 @@ $gray-color: #b1b4b9;
 $gray-black-color: #5a5f6f;
 $border-color: #ddd;
 $dark-color: #4e5367;
+$background-color: #f1f0ed;
+
+@mixin text-underline($selector) {
+  #{$selector} {
+    text-align: center;
+    color: $gray-black-color;
+    position: relative;
+  }
+  #{$selector}::after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    width: 46px;
+    height: 3px;
+    background-color: rgba(39, 39, 43, 0.1);
+    margin: 0 0 0 -23px;
+  }
+}
 
 body {
   font-family: sans-serif;
   font-size: 62.5%;
+  background-color: $background-color;
   h1 {
     font-size: 3.2em;
   }
@@ -21,8 +41,8 @@ body {
   h3 {
     font-size: 1.8em;
   }
-  .fa-8x{
-    font-size: 8em;
+  .fa-7x{
+    font-size: 7em;
   }
 }
 
@@ -92,8 +112,8 @@ body {
     }
   }
 
-  .form {
-    background-color: white;
+  .box {
+    background-color: $background-color;
     width: 75%;
     height: 150px;
     margin: 300px auto 0px auto;
@@ -118,20 +138,7 @@ body {
     margin-top: 140px;
     text-align: center;
     border-bottom: 1px $border-color solid;
-    .title {
-      color: $gray-black-color;
-      position: relative;
-    }
-    .title::after {
-      content: "";
-      position: absolute;
-      top: 35px;
-      left: 50%;
-      width: 46px;
-      height: 3px;
-      background-color: rgba(39, 39, 43, 0.1);
-      margin: 0 0 0 -23px;
-    }
+    @include text-underline(".title");
     ul {
       display: -webkit-box;
       li {
@@ -146,9 +153,9 @@ body {
           margin: auto;
           text-align: center;
           line-height: 60px;
-          @include border-radius(100%);
+          @include border-radius(50%);
           color: $gray-color;
-          background-color: white;
+          background-color: $background-color;
         }
         .number::before {
           content: '';
@@ -195,21 +202,7 @@ body {
     margin-top: 90px;
     border-bottom: 1px $border-color solid;
     overflow: hidden;
-    .title {
-      text-align: center;
-      color: $gray-black-color;
-      position: relative;
-    }
-    .title::after {
-      content: "";
-      position: absolute;
-      top: 35px;
-      left: 50%;
-      width: 46px;
-      height: 3px;
-      background-color: rgba(39, 39, 43, 0.1);
-      margin: 0 0 0 -23px;
-    }
+    @include text-underline(".title");
     ul {
       margin: 80px 5% 140px 5%;
       li{
@@ -258,31 +251,24 @@ body {
   .about-us {
     text-align: center;
     border-bottom: 1px $border-color solid;
-    img {
-      width: 120px;
-      height: 120px;
-      @include border-radius(100%);
-      padding: 5px;
-      border: 1px $border-color solid;
-    }
     .title {
       margin: 100px auto 0 auto;
       width: 410px;
       overflow: hidden;
       position: relative;
-      h2 {
+      h3 {
         width: 200px;
         float: left;
         height: 60px;
         text-align: center;
         line-height: 60px;
       }
-      h2:first-child {
+      h3:first-child {
         background-color: $dark-color;
         border: 1px $dark-color solid;
         color: white;
       }
-      h2:last-child {
+      h3:last-child {
         color: $dark-color;
         border: 1px $dark-color solid;
       }
@@ -294,23 +280,16 @@ body {
         margin-bottom: 30px;
         color: rgba(219, 219, 219, 0.5);
       }
+      @include text-underline("p");
       p {
         color: $dark-color;
         font-size: 1.5em;
         margin-bottom: 50px;
-        position: relative;
         padding: 0 20%;
         line-height: 20px;
       }
       p::after {
-        content: "";
-        position: absolute;
         top: 45px;
-        left: 50%;
-        width: 42px;
-        height: 2px;
-        background-color: rgba(39, 39, 43, 0.1);
-        margin: 0 0 0 -23px;
       }
       .name {
         color: $dark-color;
@@ -321,12 +300,25 @@ body {
       }
     }
     .image {
-      margin: 0px 0 120px 0;
-      img {
+      margin: 0px auto 120px auto;
+      overflow: hidden;
+      text-align: center;
+      width: 184*3px;
+      div {
+        float: left;
+        width: 120px;
         margin: auto 25px;
-      }
-      img:first-child, img:last-child {
-        @include filter(grayscale(100%));
+        @include border-radius(50%);
+        border: 1px $border-color solid;
+        padding: 6px;
+        img {
+          width: 120px;
+          height: 120px;
+          @include border-radius(50%);
+        }
+        &:first-child, &:last-child {
+          @include filter(grayscale(100%));
+        }
       }
     }
   }
