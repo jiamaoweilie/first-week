@@ -215,6 +215,7 @@ body .fa-7x {
   margin-top: 140px;
   text-align: center;
   border-bottom: 1px #ddd solid;
+  overflow: hidden;
 }
 /* line 14, ../sass/style.scss */
 .container .how-it-works .title {
@@ -233,18 +234,18 @@ body .fa-7x {
   background-color: rgba(39, 39, 43, 0.1);
   margin: 0 0 0 -23px;
 }
-/* line 153, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 .container .how-it-works ul {
   display: -webkit-box;
 }
-/* line 155, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 .container .how-it-works ul li {
   width: 33.33%;
   float: left;
   margin-top: 60px;
   position: relative;
 }
-/* line 160, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .container .how-it-works ul li .number {
   border: 2px #ddd solid;
   height: 60px;
@@ -258,7 +259,7 @@ body .fa-7x {
   color: #b1b4b9;
   background-color: #f1f0ed;
 }
-/* line 171, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 .container .how-it-works ul li .number::before {
   content: '';
   position: absolute;
@@ -269,35 +270,35 @@ body .fa-7x {
   background: #ddd;
   z-index: -1;
 }
-/* line 181, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .container .how-it-works ul li .first::before {
   display: none;
 }
-/* line 184, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 .container .how-it-works ul li .description {
   margin-top: 30px;
 }
-/* line 186, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 .container .how-it-works ul li .description i {
   margin-bottom: 30px;
 }
-/* line 189, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 .container .how-it-works ul li .description .fa-list-alt {
   color: #e69949;
 }
-/* line 192, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 .container .how-it-works ul li .description .fa-pencil {
   color: #9c89c9;
 }
-/* line 195, ../sass/style.scss */
+/* line 196, ../sass/style.scss */
 .container .how-it-works ul li .description .fa-users {
   color: #4085bf;
 }
-/* line 198, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 .container .how-it-works ul li .description h2 {
   color: #5a5f6f;
 }
-/* line 201, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 .container .how-it-works ul li .description :last-child {
   font-size: 1.5em;
   line-height: 20px;
@@ -305,7 +306,7 @@ body .fa-7x {
   color: #b1b4b9;
   width: 250px;
 }
-/* line 212, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .container .why-choose-us {
   margin-top: 90px;
   border-bottom: 1px #ddd solid;
@@ -328,72 +329,72 @@ body .fa-7x {
   background-color: rgba(39, 39, 43, 0.1);
   margin: 0 0 0 -23px;
 }
-/* line 217, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 .container .why-choose-us ul {
   margin: 80px 5% 140px 5%;
 }
-/* line 219, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 .container .why-choose-us ul li {
   position: relative;
   width: 50%;
   float: left;
   height: 190px;
 }
-/* line 224, ../sass/style.scss */
+/* line 225, ../sass/style.scss */
 .container .why-choose-us ul li i {
   position: absolute;
   margin-left: 10%;
 }
-/* line 228, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 .container .why-choose-us ul li div {
   text-align: left;
   margin: 0  10% 0 20%;
   color: #5a5f6f;
 }
-/* line 232, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 .container .why-choose-us ul li div p {
   margin-top: 20px;
   line-height: 20px;
   color: #b1b4b9;
   font-size: 1.5em;
 }
-/* line 242, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 .container .why-choose-us .fa-check {
   color: #57b381;
 }
-/* line 245, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 .container .why-choose-us .fa-refresh {
   color: #e69949;
 }
-/* line 248, ../sass/style.scss */
+/* line 249, ../sass/style.scss */
 .container .why-choose-us .fa-file-text {
   color: #ec546b;
 }
-/* line 251, ../sass/style.scss */
+/* line 252, ../sass/style.scss */
 .container .why-choose-us .fa-tag {
   color: #15a4e4;
 }
-/* line 254, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 .container .why-choose-us .fa-user {
   color: #9e62b7;
 }
-/* line 257, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 .container .why-choose-us .fa-thumbs-up {
   color: #e66949;
 }
-/* line 262, ../sass/style.scss */
+/* line 263, ../sass/style.scss */
 .container .about-us {
   text-align: center;
   border-bottom: 1px #ddd solid;
 }
-/* line 265, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 .container .about-us .title {
   margin: 100px auto 0 auto;
   width: 410px;
   overflow: hidden;
   position: relative;
 }
-/* line 270, ../sass/style.scss */
+/* line 271, ../sass/style.scss */
 .container .about-us .title h3 {
   width: 200px;
   float: left;
@@ -401,23 +402,23 @@ body .fa-7x {
   text-align: center;
   line-height: 60px;
 }
-/* line 277, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 .container .about-us .title h3:first-child {
   background-color: #4e5367;
   border: 1px #4e5367 solid;
   color: white;
 }
-/* line 282, ../sass/style.scss */
+/* line 283, ../sass/style.scss */
 .container .about-us .title h3:last-child {
   color: #4e5367;
   border: 1px #4e5367 solid;
 }
-/* line 287, ../sass/style.scss */
+/* line 288, ../sass/style.scss */
 .container .about-us .description {
   width: 100%;
   margin-top: 40px;
 }
-/* line 290, ../sass/style.scss */
+/* line 291, ../sass/style.scss */
 .container .about-us .description .fa-quote-left {
   margin-bottom: 30px;
   color: rgba(219, 219, 219, 0.5);
@@ -439,7 +440,7 @@ body .fa-7x {
   background-color: rgba(39, 39, 43, 0.1);
   margin: 0 0 0 -23px;
 }
-/* line 295, ../sass/style.scss */
+/* line 296, ../sass/style.scss */
 .container .about-us .description p {
   color: #4e5367;
   font-size: 1.5em;
@@ -447,27 +448,27 @@ body .fa-7x {
   padding: 0 20%;
   line-height: 20px;
 }
-/* line 302, ../sass/style.scss */
+/* line 303, ../sass/style.scss */
 .container .about-us .description p::after {
   top: 45px;
 }
-/* line 305, ../sass/style.scss */
+/* line 306, ../sass/style.scss */
 .container .about-us .description .name {
   color: #4e5367;
 }
-/* line 308, ../sass/style.scss */
+/* line 309, ../sass/style.scss */
 .container .about-us .description .intro {
   margin: 10px auto 40px auto;
   color: #b1b4b9;
 }
-/* line 313, ../sass/style.scss */
+/* line 314, ../sass/style.scss */
 .container .about-us .image {
   margin: 0px auto 120px auto;
   overflow: hidden;
   text-align: center;
   width: 552px;
 }
-/* line 318, ../sass/style.scss */
+/* line 319, ../sass/style.scss */
 .container .about-us .image div {
   float: left;
   width: 120px;
@@ -478,7 +479,7 @@ body .fa-7x {
   border: 1px #ddd solid;
   padding: 6px;
 }
-/* line 325, ../sass/style.scss */
+/* line 326, ../sass/style.scss */
 .container .about-us .image div img {
   width: 120px;
   height: 120px;
@@ -486,12 +487,12 @@ body .fa-7x {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 330, ../sass/style.scss */
+/* line 331, ../sass/style.scss */
 .container .about-us .image div:first-child, .container .about-us .image div:last-child {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-/* line 336, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .container .find-an-agent {
   padding: 110px 0;
   overflow: hidden;
@@ -499,13 +500,13 @@ body .fa-7x {
   background-size: cover;
   text-align: center;
 }
-/* line 342, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .container .find-an-agent span {
   font-size: 2.4em;
   margin-right: 30px;
   color: white;
 }
-/* line 347, ../sass/style.scss */
+/* line 348, ../sass/style.scss */
 .container .find-an-agent input {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -541,7 +542,7 @@ body .fa-7x {
   padding-left: 15px;
   color: #b1b4b9;
 }
-/* line 350, ../sass/style.scss */
+/* line 351, ../sass/style.scss */
 .container .find-an-agent button {
   -moz-border-radius-topright: 3px;
   -webkit-border-top-right-radius: 3px;
@@ -556,11 +557,11 @@ body .fa-7x {
   padding: 0 30px;
   color: white;
 }
-/* line 355, ../sass/style.scss */
+/* line 356, ../sass/style.scss */
 .container footer ul {
   margin: 25px 12%;
 }
-/* line 357, ../sass/style.scss */
+/* line 358, ../sass/style.scss */
 .container footer ul li {
   font-size: 1.5em;
   display: inline-block;
@@ -569,17 +570,17 @@ body .fa-7x {
   margin-right: 25px;
   color: #b1b4b9;
 }
-/* line 365, ../sass/style.scss */
+/* line 366, ../sass/style.scss */
 .container footer ul i {
   line-height: 22px;
   float: right;
   margin-right: 25px;
 }
-/* line 369, ../sass/style.scss */
+/* line 370, ../sass/style.scss */
 .container footer ul i.fa-twitter {
   color: #3a7aaf;
 }
-/* line 372, ../sass/style.scss */
+/* line 373, ../sass/style.scss */
 .container footer ul i.fa-facebook {
   color: #3d5ea8;
 }

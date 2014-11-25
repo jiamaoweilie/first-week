@@ -149,6 +149,7 @@ body {
     margin-top: 140px;
     text-align: center;
     border-bottom: 1px $border-color solid;
+    overflow: hidden;
     @include text-underline(".title");
     ul {
       display: -webkit-box;
