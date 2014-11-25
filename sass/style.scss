@@ -71,9 +71,6 @@ body {
   .fa-7x{
     font-size: 7em;
   }
-  .fa-s-2x{
-    font-size: 1.5em;
-  }
 }
 
 .container {
@@ -363,22 +360,17 @@ body {
         position: relative;
         line-height: 26px;
         margin-right: 25px;
-//        &:last-child{
-//          margin-right: 0px;
-//
-//        }
         color: $gray-color;
-        i {
-          line-height: 22px;
-          &.fa-twitter {
-            color: #3a7aaf;
-          }
-          &.fa-facebook {
-            color: #3d5ea8;
-          }
         }
-        &:nth-child(n+7){
-          float: right;
+      i {
+        line-height: 22px;
+        float: right;
+        margin-right: 25px;
+        &.fa-twitter {
+          color: #3a7aaf;
+        }
+        &.fa-facebook {
+          color: #3d5ea8;
         }
       }
     }
